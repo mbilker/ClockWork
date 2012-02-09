@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>ClockWork Wee App</string>
+	<string>ClockWork</string>
 	<key>CFBundleDisplayName</key>
-	<string>ClockWork_Widget</string>
+	<string>ClockWork</string>
 	<key>CFBundleExecutable</key>
 	<string>ClockWork</string>
 	<key>CFBundleIdentifier</key>

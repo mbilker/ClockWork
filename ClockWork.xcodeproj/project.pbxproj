@@ -16,15 +16,14 @@
 		61FA823E14E31B9900158975 /* ClockWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ClockWork; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FA824114E31B9900158975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		61FA824314E31B9900158975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		61FA824814E31B9900158975 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		61FA824914E31B9900158975 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		61FA824A14E31B9900158975 /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
 		61FA824B14E31B9900158975 /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
 		61FA824C14E31B9900158975 /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
 		61FA824D14E31B9900158975 /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
 		61FA824F14E31B9900158975 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
-		61FA825014E31B9900158975 /* ClockWork-Prefix.pch */ = {isa = PBXFileReference; path = "ClockWork-Prefix.pch"; sourceTree = "<group>"; };
-		61FA825114E31B9900158975 /* ClockWorkController.h */ = {isa = PBXFileReference; path = ClockWorkController.h; sourceTree = "<group>"; };
+		61FA825014E31B9900158975 /* ClockWork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockWork-Prefix.pch"; sourceTree = "<group>"; };
+		61FA825114E31B9900158975 /* ClockWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockWorkController.h; sourceTree = "<group>"; };
 		61FA825214E31B9900158975 /* ClockWorkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockWorkController.m; sourceTree = "<group>"; };
 		61FA825814E31B9900158975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/ClockWork.bundle/Info.plist; sourceTree = "<group>"; };
 		61FA825914E31B9900158975 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/ClockWork.bundle/InfoPlist.strings; sourceTree = "<group>"; };
@@ -94,7 +93,6 @@
 		61FA824714E31B9900158975 /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				61FA824814E31B9900158975 /* control.txt */,
 				61FA824914E31B9900158975 /* control */,
 				61FA824A14E31B9900158975 /* preinst */,
 				61FA824B14E31B9900158975 /* postinst */,
@@ -236,7 +234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -258,7 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -294,10 +292,10 @@
 				GCC_PREFIX_HEADER = "ClockWork/ClockWork-Prefix.pch";
 				INSTALL_PATH = /System/Library/WeeAppPlugins/ClockWork.bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnProfiling = NO;
-				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 10.0.2.3;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Release;
@@ -313,10 +311,10 @@
 				GCC_PREFIX_HEADER = "ClockWork/ClockWork-Prefix.pch";
 				INSTALL_PATH = /System/Library/WeeAppPlugins/ClockWork.bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnProfiling = NO;
-				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 10.0.2.3;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Debug;

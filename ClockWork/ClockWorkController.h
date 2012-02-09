@@ -1,10 +1,5 @@
-//
-//  ClockWorkController.h
-//  ClockWork
-//
-//  Created by System Administrator on 2/8/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+// ClockWorkController.h
+// by mbilker
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -13,8 +8,11 @@
 @interface ClockWorkController : NSObject <BBWeeAppController>
 {
     UIView *_view;
+    UILabel *_lbl;
+    NSTimer *_timer;
 }
 
 - (UIView *)view;
+- (void)update:(NSTimer *)timer;
 
 @end
