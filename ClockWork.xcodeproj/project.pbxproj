@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61FA824214E31B9900158975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FA824114E31B9900158975 /* Foundation.framework */; };
+		61FA824414E31B9900158975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FA824314E31B9900158975 /* UIKit.framework */; };
+		61FA825314E31B9900158975 /* ClockWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FA825214E31B9900158975 /* ClockWorkController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61FA823E14E31B9900158975 /* ClockWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ClockWork; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FA824114E31B9900158975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61FA824314E31B9900158975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61FA824914E31B9900158975 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		61FA824A14E31B9900158975 /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		61FA824B14E31B9900158975 /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		61FA824C14E31B9900158975 /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		61FA824D14E31B9900158975 /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		61FA824F14E31B9900158975 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		61FA825014E31B9900158975 /* ClockWork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockWork-Prefix.pch"; sourceTree = "<group>"; };
+		61FA825114E31B9900158975 /* ClockWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockWorkController.h; sourceTree = "<group>"; };
+		61FA825214E31B9900158975 /* ClockWorkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockWorkController.m; sourceTree = "<group>"; };
+		61FA825814E31B9900158975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/ClockWork.bundle/Info.plist; sourceTree = "<group>"; };
+		61FA825914E31B9900158975 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/ClockWork.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		61FA825A14E31B9900158975 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/ClockWork.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		61FA825B14E31B9900158975 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/ClockWork.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61FA823A14E31B9900158975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FA824214E31B9900158975 /* Foundation.framework in Frameworks */,
+				61FA824414E31B9900158975 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61FA823214E31B9900158975 = {
+			isa = PBXGroup;
+			children = (
+				61FA824514E31B9900158975 /* ClockWork */,
+				61FA824014E31B9900158975 /* Frameworks */,
+				61FA823F14E31B9900158975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61FA823F14E31B9900158975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61FA823E14E31B9900158975 /* ClockWork */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61FA824014E31B9900158975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61FA824114E31B9900158975 /* Foundation.framework */,
+				61FA824314E31B9900158975 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61FA824514E31B9900158975 /* ClockWork */ = {
+			isa = PBXGroup;
+			children = (
+				61FA825114E31B9900158975 /* ClockWorkController.h */,
+				61FA825214E31B9900158975 /* ClockWorkController.m */,
+				61FA824614E31B9900158975 /* Package */,
+				61FA824E14E31B9900158975 /* Supporting Files */,
+			);
+			path = ClockWork;
+			sourceTree = "<group>";
+		};
+		61FA824614E31B9900158975 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				61FA824714E31B9900158975 /* DEBIAN */,
+				61FA825414E31B9900158975 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		61FA824714E31B9900158975 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				61FA824914E31B9900158975 /* control */,
+				61FA824A14E31B9900158975 /* preinst */,
+				61FA824B14E31B9900158975 /* postinst */,
+				61FA824C14E31B9900158975 /* prerm */,
+				61FA824D14E31B9900158975 /* postrm */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		61FA824E14E31B9900158975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61FA824F14E31B9900158975 /* PackageVersion.plist */,
+				61FA825014E31B9900158975 /* ClockWork-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61FA825414E31B9900158975 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				61FA825514E31B9900158975 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		61FA825514E31B9900158975 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				61FA825614E31B9900158975 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		61FA825614E31B9900158975 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				61FA825714E31B9900158975 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		61FA825714E31B9900158975 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				61FA825814E31B9900158975 /* Info.plist */,
+				61FA825914E31B9900158975 /* InfoPlist.strings */,
+				61FA825A14E31B9900158975 /* WeeAppBackground@2x.png */,
+				61FA825B14E31B9900158975 /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61FA823B14E31B9900158975 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61FA823D14E31B9900158975 /* ClockWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61FA825E14E31B9900158975 /* Build configuration list for PBXNativeTarget "ClockWork" */;
+			buildPhases = (
+				61FA823914E31B9900158975 /* Sources */,
+				61FA823A14E31B9900158975 /* Frameworks */,
+				61FA823B14E31B9900158975 /* Headers */,
+				61FA823C14E31B9900158975 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockWork;
+			productName = ClockWork;
+			productReference = 61FA823E14E31B9900158975 /* ClockWork */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61FA823414E31B9900158975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 61FA823714E31B9900158975 /* Build configuration list for PBXProject "ClockWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61FA823214E31B9900158975;
+			productRefGroup = 61FA823F14E31B9900158975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61FA823D14E31B9900158975 /* ClockWork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61FA823C14E31B9900158975 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61FA823914E31B9900158975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FA825314E31B9900158975 /* ClockWorkController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61FA825C14E31B9900158975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		61FA825D14E31B9900158975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		61FA825F14E31B9900158975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = ClockWork;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockWork/ClockWork-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/ClockWork.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 10.0.2.3;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		61FA826014E31B9900158975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = ClockWork;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClockWork/ClockWork-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/ClockWork.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 10.0.2.3;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61FA823714E31B9900158975 /* Build configuration list for PBXProject "ClockWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FA825C14E31B9900158975 /* Release */,
+				61FA825D14E31B9900158975 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61FA825E14E31B9900158975 /* Build configuration list for PBXNativeTarget "ClockWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FA825F14E31B9900158975 /* Release */,
+				61FA826014E31B9900158975 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61FA823414E31B9900158975 /* Project object */;
+}
