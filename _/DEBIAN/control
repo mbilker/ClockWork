@@ -1,0 +1,10 @@
+Package: us.mbilker.clockwork
+Name: ClockWork
+Depends: firmware (>= 5.0), com.saurik.substrate.safemode, com.chpwn.weeloader
+Version: 1.1-1
+Architecture: iphoneos-arm
+Description: An awesome time widget that displays the time to the second!
+Maintainer: mbilker
+Author: mbilker
+Section: Addons (NotificationCenter)
+Installed-Size: 24
