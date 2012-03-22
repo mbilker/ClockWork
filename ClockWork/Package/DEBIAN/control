@@ -1,0 +1,17 @@
+Package: us.mbilker.ClockWork
+Name: ClockWork
+Version: 0.1-1
+Description: 
+Section: Addons (NotificationCenter)
+Depends: firmware (>= 5.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Matt Bilker
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
