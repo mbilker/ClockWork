@@ -33,6 +33,15 @@ static NSBundle *_ClockWorkWeeAppBundle = nil;
 	[super dealloc];
 }
 
+- (void)refreshTime {
+	NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
+	[timeFormat setDateFormat:@"hh:mm:ss aa zzz"];
+	NSString *timeString = [timeFormat stringFromDate:[NSDate date]];
+	[timeFormat release];
+	//NSLog(@"DateString: %@",dateString);
+	_lbl.text = [NSString stringWithFormat:@"Time: %@",timeString];
+}
+
 - (void)loadFullView {
 	// Add subviews to _backgroundView (or _view) here.
 	_lbl = [[UILabel alloc] initWithFrame:(CGRect){CGPointZero, {316.f, [self viewHeight]}}];
@@ -48,6 +57,7 @@ static NSBundle *_ClockWorkWeeAppBundle = nil;
 	_lbl.center = _view.center;
 	[_view addSubview:_lbl];
 
+	[self refreshTime];
 	_timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(update:) userInfo:nil repeats:YES];
 }
 
@@ -69,11 +79,7 @@ static NSBundle *_ClockWorkWeeAppBundle = nil;
 
 - (void)update:(NSTimer *)timer
 {
-	NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
-	[timeFormat setDateFormat:@"hh:mm:ss aa zzz"];
-	NSString *timeString = [timeFormat stringFromDate:[NSDate date]];
-	//NSLog(@"DateString: %@",dateString);
-	_lbl.text = [NSString stringWithFormat:@"Time: %@",timeString];  
+	[self refreshTime];
 }
 
 - (void)viewWillDisappear {
